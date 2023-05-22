@@ -1,0 +1,60 @@
+<h1>Formulaire d'inscription</h1>
+
+<div class="box">
+
+    <div>
+        <label>
+            Nom:
+            <input type="text" [formControl]="name">
+        </label>
+    </div><br>
+
+    <div>
+        <label>
+            Email:
+            <input type="email" [formControl]="email">
+        </label>
+    </div><br>
+
+    <div>
+        <label>
+            Mot de passe:
+            <input type="password" [formControl]="password">
+        </label>
+    </div>
+
+    <div>
+
+        <h2>Adresse</h2>
+
+        <div>
+            <label>
+                Rue:
+                <input type="text" [formControl]="street">
+            </label>
+        </div><br>
+        <div>
+            <label>
+                Code postal:
+                <input type="number" [formControl]="county">
+            </label></div><br>
+        <div>
+            <label>
+                Ville:
+                <input type="text" [formControl]="city">
+            </label>
+        </div><br>
+    </div><br>
+
+    <button (click)="submit()">Inscription</button><br>
+
+    <div *ngIf="action">
+        <p>{{name.value}}</p>
+        <p>{{email.value}}</p>
+        <p>{{password.value}}</p>
+        <p>{{street.value}}</p>
+        <p>{{county.value}}</p>
+        <p>{{city.value}}</p>
+    </div>
+
+</div>

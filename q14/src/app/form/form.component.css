@@ -1,0 +1,11 @@
+.box {
+    height: auto;
+    width: 325px;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 5px; 
+}
+
+button {
+    margin-left: 125px;
+} 
